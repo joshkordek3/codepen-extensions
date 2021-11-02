@@ -1,4 +1,4 @@
-import * from "https://cdn.jsdelivr.net/gh/lesander/console.history@v1.5.1/console-history.min.js";
+import * from "console.history-lesander.min.js";
 const isUndefined = (value) => (value === null || value === undefined);
 
 console.stdClear = console.clear.bind(console);
