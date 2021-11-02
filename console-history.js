@@ -1,5 +1,5 @@
-'use strict'
 import * from "console.history-lesander.min.js";
+import * from "random-stuff.js";
 const isUndefined = (value) => (value === null || value === undefined);
 
 console.stdClear = console.clear.bind(console);
