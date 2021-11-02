@@ -1,3 +1,4 @@
+'use strict'
 import * from "console.history-lesander.min.js";
 const isUndefined = (value) => (value === null || value === undefined);
 
