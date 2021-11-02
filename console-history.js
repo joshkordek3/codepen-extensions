@@ -8,7 +8,7 @@ console.clear = () => {
 };
 console.standardize = (log) => {
   if (isUndefined(log)) return;
-  return log.length == 1 ? String(log) : log;
+  return log.length === 1 ? String(log) : log;
 };
 console.getHistory = () => {
   const array = [];
@@ -35,7 +35,7 @@ console.remove = (logToRemove, isIndex) => {
   if (isUndefined(logToRemove)) return "";
   
   const history = console.getHistory();
-  if (isIndex && typeof logToRemove == "number") {
+  if (isIndex && typeof logToRemove === "number") {
     history.splice(logToRemove);
   } else {
     const stringifiedHistory = history;
