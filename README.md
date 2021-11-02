@@ -1,4 +1,4 @@
-# how to use
+# HOW TO USE
 1. Go to codepen.io
 2. Create a new pen (or just go to one you already have)
 3. Click on the settings icon in the JS tab
