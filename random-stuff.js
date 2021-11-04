@@ -1,3 +1,12 @@
+class ArrayExtension extends Array {
+  insert (item, index) {
+    this.splice(index, 0, item);
+  }
+}
+Array.prototype.insert = function (item, index) {
+  this.splice(index, 0, item);
+  return this;
+}
 export const objectToArray = (object, containKeys) => (Object.keys(object).map((key) => containKeys ? [key, object[key]] : object[key]));
 export const isUndefined = (value) => (value === null || value === undefined);
 export const convertToString = (thing) => (typeof thing === 'function' ? String(thing) : JSON.stringify(thing));
