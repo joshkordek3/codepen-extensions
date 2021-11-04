@@ -1,6 +1,5 @@
 import "console.history-lesander.min.js";
 import "random-stuff.js";
-export const isUndefined = (value) => (value === null || value === undefined);
 console.stdClear = console.clear.bind(console);
 console.clear = () => {
   console.history = [];
