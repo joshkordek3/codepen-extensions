@@ -45,3 +45,4 @@ console.remove = (logToRemove, isIndex) => {
     console.log(...log);
   }
 };
+export console;
