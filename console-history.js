@@ -27,7 +27,7 @@ console.read = (place) => {
     return console.standardize(thing);
   }
   const placeType = typeof place;
-  if (placeType !== 'number') throw new Error("expected type of place to be a number or string but instead got a" + checkForN(placeType));
+  if (placeType !== 'number') throw new Error("expected type of place to be a number or string but instead got a" + checkType(placeType));
   if (isUndefined(thing)) thing = history[place];
   if (isUndefined(thing)) return;
   return console.standardize(thing);
