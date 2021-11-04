@@ -1,7 +1,6 @@
 import "console.history-lesander.min.js";
 import "random-stuff.js";
-const isUndefined = (value) => (value === null || value === undefined);
-
+export const isUndefined = (value) => (value === null || value === undefined);
 console.stdClear = console.clear.bind(console);
 console.clear = () => {
   console.history = [];
@@ -23,9 +22,7 @@ console.read = (place) => {
   let thing = null;
   if (isUndefined(thing) || place === "last") thing = history[history.length - 1];
   if (place === "first") thing = history[0];
-  if (thing) {
-    return console.standardize(thing);
-  }
+  if (thing) return console.standardize(thing);
   const placeType = typeof place;
   if (placeType !== 'number') throw new Error("expected type of place to be a number or string but instead got a" + checkType(placeType));
   if (isUndefined(thing)) thing = history[place];
@@ -34,7 +31,6 @@ console.read = (place) => {
 };
 console.remove = (logToRemove, isIndex) => {
   if (isUndefined(logToRemove)) return "";
-  
   const history = console.getHistory();
   if (isIndex && typeof logToRemove === "number") {
     history.splice(logToRemove);
