@@ -1,4 +1,5 @@
 export const objectToArray = (object, containKeys) => (Object.keys(object).map((key) => containKeys ? [key, object[key]] : object[key]));
+export const isUndefined = (value) => (value === null || value === undefined);
 export const convertToString = (thing) => (typeof thing === 'function' ? String(thing) : JSON.stringify(thing));
 export const checkType = (val) => {
   const valType = typeof val;
