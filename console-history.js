@@ -1,5 +1,5 @@
-import "console.history-lesander.min.js"; // https://github.com/lesander/console.history/blob/master/console-history.min.js
-import "random-stuff.js";
+import "/console.history-lesander.min.js"; // https://github.com/lesander/console.history/blob/master/console-history.min.js
+import "/random-stuff.js";
 console.stdClear = console.clear.bind(console);
 console.clear = () => {
   console.history = [];
